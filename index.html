@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul li {
+            display: inline;
+            /* margin: 10px; */
+        }
+
+        ul li a:hover {
+            color: red;
+            cursor: pointer;
+            /* padding: 30px; */
+        }
+
+        ul li:not(:first-child) {
+            margin-left: 10px;
+        }
+
+        table {
+            /* border: 1px solid black; */
+            margin: 20px;
+            border-collapse: collapse;
+            height: 200px;
+            width: 200px;
+        }
+
+        th,
+        td {
+            border: 1px solid red;
+            padding: 10px;
+        }
+
+        .footer {
+            text-align: center;
+        }
+        .parent{
+            height: 500px;
+            width: 500px;
+            border: 1px solid red;
+        }
+        .child{
+            border: 1px solid;
+            height: 250px;
+        }
+        .flex-item{
+            height: 100px;
+            width: 100px;
+            border: 1px solid rgb(24, 22, 22);
+        }
+        .flexbox{
+            display: flex;
+            gap: 20px;
+            background-color: aqua;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">contact</a></li>
+        <li><a href="">about us</a></li>
+        <li><a href="">service</a></li>
+        <li><a href="">location</a></li>
+    </ul>
+    <table>
+        <tr>
+            <th>nmae</th>
+            <th>quantity</th>
+            <th>price</th>
+        </tr>
+        <tr>
+            <td>savin</td>
+            <td>75</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>nivas</td>
+            <td>95</td>
+            <td>200</td>
+        </tr>
+        <tr>
+            <td colspan="2" class="footer">total</td>
+            <td>300</td>
+        </tr>
+    </table>
+    <div class="box">
+        <div class="lorem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ipsam. Ullam aliquam nobis ad quasi
+            reiciendis sequi, illum tempore necessitatibus.
+        </div>
+    </div>
+    <h1>measurment units</h1>
+    <div class="parent">
+        <div class="child">ram</div>
+        <div class="child">gun</div>
+    </div>
+    <div class="flexbox">
+        <div class="flex-item">1</div>
+        <div class="flex-item">2</div>
+        <div class="flex-item">3</div>
+        <div class="flex-item">4</div>
+        <div class="flex-item">5</div>
+    </div>
+</body>
+
+</html>
